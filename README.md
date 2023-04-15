@@ -1,5 +1,5 @@
 # Strings
-###Programma c# per lo studio delle stringhe:
+### Programma c# per lo studio delle stringhe:
 Programma che manipola le stringhe senza usare i metodi convenzionale elaborarando una stringa in ingresso e visualizzare:
 - la sua versione Maiuscola
 - la sua versione Minuscola
@@ -35,6 +35,8 @@ int Lunghezza(string comecavolomipare)
 	}
 ```
 IsLetter
+Per creare il metodo IsLetter ho usato due if che controllassero se fosse un carattere, minuscolo o maiscolo
+Qui c'è un esempio:
  ```
 bool isletter(char c)
 	{
@@ -49,6 +51,8 @@ bool isletter(char c)
     }
  ```
    IsDigit
+   Per creare il metodo IsDigit ho usato un if che controllasse che il char sia compreso tra 0 e 9
+   Qui c'è un esempio:
  ```
     bool isdigit(char c)
     {
@@ -60,6 +64,8 @@ bool isletter(char c)
     }
  ```
  Maiuscolo 
+ Per creare il metodo ToUpper ho convertito la stringa in un array e ho preso la sua lunghezza, poi ho fatto un for che scorre il vettore e ogni volta che trova una lettera usa una maschera che mette in maiuscolo ogni carattere che trova, ritornando il vettore trasfosrmato in una stringa
+ Qui c'è un esempio:
 ```
  string Maiuscolo(string s)
 {
@@ -77,6 +83,8 @@ bool isletter(char c)
 }
 ```
 Minuscolo
+Per creare il metodo ToLower ho convertito la stringa in un array e ho preso la sua lunghezza, poi ho fatto un for che scorre il vettore e ogni volta che trova una lettera usa una maschera che mette in minuscolo ogni carattere che trova, ritornando il vettore trasfosrmato in una stringa
+Qui c'è un esempio:
 ```
  string Minuscolo(string s)
     {
@@ -94,6 +102,7 @@ Minuscolo
     }
 ```
 Alfabetica
+Qui c'è un esempio:
 ```
  bool alfabetico(string s)
     {
@@ -114,6 +123,7 @@ Alfabetica
     }
 ```
 Numero di lettere
+Qui c'è un esempio:
 ```
 int nlettere(string s)
 	{
@@ -131,6 +141,7 @@ int nlettere(string s)
     }
  ```
   Alfanumerica
+  Qui c'è un esempio:
  ```
   bool alfanumerico( string s )
 	{
@@ -151,6 +162,7 @@ int nlettere(string s)
     }
  ```
   Reverse
+  Qui c'è un esempio:
 ```
   string Reverse(string s) 
     {
@@ -168,6 +180,7 @@ int nlettere(string s)
     }
  ```
   Numero di parole
+  Qui c'è un esempio:
  ```
   int numparole(string s) 
     {
@@ -185,6 +198,7 @@ int nlettere(string s)
     }
  ```
   Capitalizzata
+  Qui c'è un esempio:
 ```
   string Capitalizzata(string s)
     {
@@ -206,6 +220,7 @@ int nlettere(string s)
     }
   ```
   Palindroma
+  Qui c'è un esempio:
  ```
   bool palindromo(string s)
     {
@@ -226,9 +241,9 @@ int nlettere(string s)
         }
         return false;
     }
-    ```
-    Poi ho creato un metodo che restituisce un array in cui non ci sono gli spazi:
-    ```
+ ```
+ Poi ho creato un metodo che restituisce un array in cui non ci sono gli spazi:
+ ```
     char nospace(string s)
     {
         int len = Lunghezza(s);
