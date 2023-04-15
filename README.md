@@ -124,6 +124,7 @@ Qui c'è un esempio:
     }
 ```
 Numero di lettere
+Per contare il numero di lettere di una stringa ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e se trova una lettera aumeta di uno una variabile precedentemente dichiarata
 Qui c'è un esempio:
 ```
 int nlettere(string s)
@@ -164,6 +165,7 @@ int nlettere(string s)
     }
  ```
   Reverse
+  Per creare la stringa rovesciata ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre un vettore invertendo i valori della prima metà del vettore con quelli della seconda
   Qui c'è un esempio:
 ```
   string Reverse(string s) 
@@ -182,6 +184,7 @@ int nlettere(string s)
     }
  ```
   Numero di parole
+  Per contare le parole nella stringa ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e, se incontra uno spazio e se nella cella successiva incontra un carattere, aumenta di uno una variabile precedentemente dichiarata
   Qui c'è un esempio:
  ```
   int numparole(string s) 
@@ -200,6 +203,7 @@ int nlettere(string s)
     }
  ```
   Capitalizzata
+  Per creare la scritta capitalizzata ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, poi rende tutti i caratteri minuscoli richiamando la funzione creata in precedenza, infine scorre il vettore il vettore e quando incontra uno spazio fa diventare il carattere successivo maiuscolo
   Qui c'è un esempio:
 ```
   string Capitalizzata(string s)
