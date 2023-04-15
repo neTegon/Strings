@@ -85,3 +85,140 @@ Minuscolo
         }
         return new String(caratteri);
     }
+Alfabetica
+ bool alfabetico(string s)
+    {
+        int len = Lunghezza(s);
+        char[] caratteri = s.ToCharArray();
+        for (int idx = 0; idx < len; idx++)
+        {
+            if (isletter(caratteri[idx])
+            {
+
+            }
+            else
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+Numero di lettere
+int nlettere(string s)
+	{
+        int len = Lunghezza(s);
+        char[] caratteri = s.ToCharArray();
+		int n;
+        for (int idx = 0; idx < len; idx++)
+        {
+            if (isletter(caratteri[idx])
+            {
+				n = n + 1;
+            }
+        }
+        return n;
+    }
+  Alfanumerica
+  bool alfanumerico( string s )
+	{
+        int len = Lunghezza(s);
+        char[] caratteri = s.ToCharArray();
+        for (int idx = 0; idx < len; idx++)
+        {
+            if (isletter(caratteri[idx] || isdigit(caratteri[idx])
+            {
+                
+            }
+			else
+			{
+				return false;
+			}
+        }
+		return true;
+    }
+  Reverse
+  string Reverse(string s) 
+    {
+        int len = Lunghezza(s);
+        char[] caratteri = s.ToCharArray();
+        char[] tmp;
+        for (int idx = 0; idx < len; idx++)
+        {
+           tmp = caratteri[idx];
+            caratteri[idx]= caratteri[len];
+            caratteri[len]= tmp;
+            len--;
+        }
+        return new String(caratteri);
+    }
+  Numero di parole
+  int numparole(string s) 
+    {
+        int len = Lunghezza(s);
+        int n;
+        char[] caratteri = s.ToCharArray();
+        for (int idx = 0; idx < len; idx++)
+        {
+            if (caratteri[idx] == ' ' && alfabetico(caratteri[idx+1]))
+            {
+                n++;
+            }
+        }
+        return n;
+    }
+  Capitalizzata
+  string Capitalizzata(string s)
+    {
+        int len = Lunghezza(s);
+        char[] caratteri = s.ToCharArray();
+        for (int idx = 0; idx < len; idx++)
+        {
+            caratteri[idx] = Minuscolo(caratteri[idx]);
+        }
+        caratteri[0]= Maiuscolo(caratteri[0]);
+        for (int idx = 1;idx < len; idx++)
+        {
+            if (caratteri[idx] == ' ')
+            {
+                caratteri[idx+1] = Maiuscolo(caratteri[idx+1]);
+            }
+        }
+        return new string(caratteri);
+    }
+  Palindroma
+  bool palindromo(string s)
+    {
+        int len = Lunghezza(s);
+        char[] caratteri = s.ToCharArray();
+        if (alfabetico(caratteri)==false)
+        {
+            return false;
+        }
+        for (int idx = 0; idx < len; idx++)
+        {
+            caratteri[idx] = Minuscolo(caratteri[idx]);
+            caratteri[idx]= nospace(caratteri[idx]);
+        }
+        if (caratteri== Reverse(caratteri))
+        {
+            return true;
+        }
+        return false;
+    }
+    Poi ho creato un metodo che restituisce un array in cui non ci sono gli spazi:
+    char nospace(string s)
+    {
+        int len = Lunghezza(s);
+        char[] caratteri = s.ToCharArray();
+        for (int idx = 0; idx < len; idx++)
+        {
+            if (caratteri[idx] == ' ')
+            {
+                for (int j = idx; j < len; j++)
+                {
+                    caratteri[j] = caratteri[j + 1];
+                }
+            }
+        }
+        return caratteri;
+    }
