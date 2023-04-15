@@ -226,6 +226,7 @@ int nlettere(string s)
     }
   ```
   Palindroma
+  Per controllare che la stringa sia palindroma ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore,dopo aver controllato che ci siano solo caratteri alfabetici, toglie gli spazi e rende tutti i caratteri minuscoli. Una volta fatto conrolla se l'array è uguale alla sua verione rovesciata.
   Qui c'è un esempio:
  ```
   bool palindromo(string s)
@@ -248,7 +249,8 @@ int nlettere(string s)
         return false;
     }
  ```
- Poi ho creato un metodo che restituisce un array in cui non ci sono gli spazi:
+ Poi ho creato un metodo che restituisce un array in cui non ci sono gli spazi spostando i caratteri di una posizione verso sinistra ogni volta che incontra uno spazio
+  Qui c'è un esempio:
  ```
     char nospace(string s)
     {
