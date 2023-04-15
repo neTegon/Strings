@@ -33,8 +33,9 @@ int Lunghezza(string comecavolomipare)
 		}
 		return retVal;
 	}
-  ```
+```
 IsLetter
+ ```
 bool isletter(char c)
 	{
         if (c >= 'a' && c <= 'z')
@@ -46,7 +47,9 @@ bool isletter(char c)
         }
 		return false;
     }
+ ```
    IsDigit
+ ```
     bool isdigit(char c)
     {
         if (c >= '0' && c <= '9')
@@ -55,7 +58,9 @@ bool isletter(char c)
         }
         return false;
     }
+ ```
  Maiuscolo 
+```
  string Maiuscolo(string s)
 {
 	int len = Lunghezza(s);
@@ -70,7 +75,9 @@ bool isletter(char c)
 	}
 	return new String(caratteri);
 }
+```
 Minuscolo
+```
  string Minuscolo(string s)
     {
         int len = Lunghezza(s);
@@ -85,7 +92,9 @@ Minuscolo
         }
         return new String(caratteri);
     }
+```
 Alfabetica
+```
  bool alfabetico(string s)
     {
         int len = Lunghezza(s);
@@ -103,7 +112,9 @@ Alfabetica
         }
         return true;
     }
+```
 Numero di lettere
+```
 int nlettere(string s)
 	{
         int len = Lunghezza(s);
@@ -118,7 +129,9 @@ int nlettere(string s)
         }
         return n;
     }
+ ```
   Alfanumerica
+ ```
   bool alfanumerico( string s )
 	{
         int len = Lunghezza(s);
@@ -136,7 +149,9 @@ int nlettere(string s)
         }
 		return true;
     }
+ ```
   Reverse
+```
   string Reverse(string s) 
     {
         int len = Lunghezza(s);
@@ -151,7 +166,9 @@ int nlettere(string s)
         }
         return new String(caratteri);
     }
+ ```
   Numero di parole
+ ```
   int numparole(string s) 
     {
         int len = Lunghezza(s);
@@ -166,7 +183,9 @@ int nlettere(string s)
         }
         return n;
     }
+ ```
   Capitalizzata
+```
   string Capitalizzata(string s)
     {
         int len = Lunghezza(s);
@@ -185,7 +204,9 @@ int nlettere(string s)
         }
         return new string(caratteri);
     }
+  ```
   Palindroma
+ ```
   bool palindromo(string s)
     {
         int len = Lunghezza(s);
@@ -205,7 +226,9 @@ int nlettere(string s)
         }
         return false;
     }
+    ```
     Poi ho creato un metodo che restituisce un array in cui non ci sono gli spazi:
+    ```
     char nospace(string s)
     {
         int len = Lunghezza(s);
@@ -222,3 +245,4 @@ int nlettere(string s)
         }
         return caratteri;
     }
+```
