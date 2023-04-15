@@ -10,6 +10,7 @@ Programma che manipola le stringhe senza usare i metodi convenzionale elaboraran
 - di quante parole è formata
 - la versione Capitalized 
 - Se è palindroma 
+
 Per realizzarlo non ho usato seguenti metodi, ma li ho costruiti personalmete:
 -Lenght()
 -ToUpper()
@@ -19,8 +20,11 @@ Per realizzarlo non ho usato seguenti metodi, ma li ho costruiti personalmete:
 -Replace()
 -IsLetter()
 -IsNumber()
+
 Lenght
+
 Per creare il metodo .Lenght() ho convertito la stringa in un array, poi ho dichiarato una variabile intera che aumenteraà di 1 ogni volta che si scorre il vettore.
+
 Qui c'è un esempio:
 ```
 int Lunghezza(string comecavolomipare)
@@ -35,7 +39,9 @@ int Lunghezza(string comecavolomipare)
 	}
 ```
 IsLetter
+
 Per creare il metodo IsLetter ho usato due if che controllassero se fosse un carattere, minuscolo o maiscolo
+
 Qui c'è un esempio:
  ```
 bool isletter(char c)
@@ -50,9 +56,11 @@ bool isletter(char c)
 		return false;
     }
  ```
-   IsDigit
-   Per creare il metodo IsDigit ho usato un if che controllasse che il char sia compreso tra 0 e 9
-   Qui c'è un esempio:
+ IsDigit
+ 
+ Per creare il metodo IsDigit ho usato un if che controllasse che il char sia compreso tra 0 e 9
+ 
+ Qui c'è un esempio:
  ```
     bool isdigit(char c)
     {
@@ -63,9 +71,11 @@ bool isletter(char c)
         return false;
     }
  ```
- Maiuscolo 
- Per creare il metodo ToUpper ho convertito la stringa in un array e ho preso la sua lunghezza, poi ho fatto un for che scorre il vettore e ogni volta che trova una lettera usa una maschera che mette in maiuscolo ogni carattere che trova, ritornando il vettore trasfosrmato in una stringa
- Qui c'è un esempio:
+Maiuscolo 
+
+Per creare il metodo ToUpper ho convertito la stringa in un array e ho preso la sua lunghezza, poi ho fatto un for che scorre il vettore e ogni volta che trova una lettera usa una maschera che mette in maiuscolo ogni carattere che trova, ritornando il vettore trasfosrmato in una stringa
+
+Qui c'è un esempio:
 ```
  string Maiuscolo(string s)
 {
@@ -83,7 +93,9 @@ bool isletter(char c)
 }
 ```
 Minuscolo
+
 Per creare il metodo ToLower ho convertito la stringa in un array e ho preso la sua lunghezza, poi ho fatto un for che scorre il vettore e ogni volta che trova una lettera usa una maschera che mette in minuscolo ogni carattere che trova, ritornando il vettore trasfosrmato in una stringa
+
 Qui c'è un esempio:
 ```
  string Minuscolo(string s)
@@ -102,7 +114,9 @@ Qui c'è un esempio:
     }
 ```
 Alfabetica
+
 Per controllare che la stringa sia alfabetica ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e se incontra un carattere che non è una lettera ritorna falso, altrimenti, una volta finito il vettore, ritorna vero
+
 Qui c'è un esempio:
 ```
  bool alfabetico(string s)
@@ -124,7 +138,9 @@ Qui c'è un esempio:
     }
 ```
 Numero di lettere
+
 Per contare il numero di lettere di una stringa ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e se trova una lettera aumeta di uno una variabile precedentemente dichiarata
+
 Qui c'è un esempio:
 ```
 int nlettere(string s)
@@ -142,9 +158,11 @@ int nlettere(string s)
         return n;
     }
  ```
-  Alfanumerica
-  Per controllare che la stringa sia alfanumerica ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e se incontra un carattere che non è una lettera o un numero ritorna falso, altrimenti, una volta finito il vettore, ritorna vero
-  Qui c'è un esempio:
+Alfanumerica
+
+Per controllare che la stringa sia alfanumerica ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e se incontra un carattere che non è una lettera o un numero ritorna falso, altrimenti, una volta finito il vettore, ritorna vero
+
+Qui c'è un esempio:
  ```
   bool alfanumerico( string s )
 	{
@@ -164,9 +182,11 @@ int nlettere(string s)
 		return true;
     }
  ```
-  Reverse
-  Per creare la stringa rovesciata ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre un vettore invertendo i valori della prima metà del vettore con quelli della seconda
-  Qui c'è un esempio:
+Reverse
+
+Per creare la stringa rovesciata ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre un vettore invertendo i valori della prima metà del vettore con quelli della seconda
+
+Qui c'è un esempio:
 ```
   string Reverse(string s) 
     {
@@ -183,9 +203,11 @@ int nlettere(string s)
         return new String(caratteri);
     }
  ```
-  Numero di parole
-  Per contare le parole nella stringa ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e, se incontra uno spazio e se nella cella successiva incontra un carattere, aumenta di uno una variabile precedentemente dichiarata
-  Qui c'è un esempio:
+Numero di parole
+
+Per contare le parole nella stringa ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e, se incontra uno spazio e se nella cella successiva incontra un carattere, aumenta di uno una variabile precedentemente dichiarata
+
+Qui c'è un esempio:
  ```
   int numparole(string s) 
     {
@@ -202,9 +224,11 @@ int nlettere(string s)
         return n;
     }
  ```
-  Capitalizzata
-  Per creare la scritta capitalizzata ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, poi rende tutti i caratteri minuscoli richiamando la funzione creata in precedenza, infine scorre il vettore il vettore e quando incontra uno spazio fa diventare il carattere successivo maiuscolo
-  Qui c'è un esempio:
+Capitalizzata
+
+Per creare la scritta capitalizzata ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, poi rende tutti i caratteri minuscoli richiamando la funzione creata in precedenza, infine scorre il vettore il vettore e quando incontra uno spazio fa diventare il carattere successivo maiuscolo
+
+Qui c'è un esempio:
 ```
   string Capitalizzata(string s)
     {
@@ -225,9 +249,11 @@ int nlettere(string s)
         return new string(caratteri);
     }
   ```
-  Palindroma
-  Per controllare che la stringa sia palindroma ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore,dopo aver controllato che ci siano solo caratteri alfabetici, toglie gli spazi e rende tutti i caratteri minuscoli. Una volta fatto conrolla se l'array è uguale alla sua verione rovesciata.
-  Qui c'è un esempio:
+ Palindroma
+ 
+ Per controllare che la stringa sia palindroma ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore,dopo aver controllato che ci siano solo caratteri alfabetici, toglie gli spazi e rende tutti i caratteri minuscoli. Una volta fatto conrolla se l'array è uguale alla sua verione rovesciata.
+
+Qui c'è un esempio:
  ```
   bool palindromo(string s)
     {
@@ -249,8 +275,9 @@ int nlettere(string s)
         return false;
     }
  ```
- Poi ho creato un metodo che restituisce un array in cui non ci sono gli spazi spostando i caratteri di una posizione verso sinistra ogni volta che incontra uno spazio
-  Qui c'è un esempio:
+Poi ho creato un metodo che restituisce un array in cui non ci sono gli spazi spostando i caratteri di una posizione verso sinistra ogni volta che incontra uno spazio
+
+Qui c'è un esempio:
  ```
     char nospace(string s)
     {
