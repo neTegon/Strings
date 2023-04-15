@@ -1,6 +1,6 @@
 # Strings
 ### Programma c# per lo studio delle stringhe:
-Programma che manipola le stringhe senza usare i metodi convenzionale elaborarando una stringa in ingresso e visualizzare:
+Programma che manipola le stringhe senza usare i metodi convenzionali elaborarando una stringa in ingresso e visualizzare:
 - la sua versione Maiuscola
 - la sua versione Minuscola
 - se contiene solo caratteri Alfabetici
