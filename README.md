@@ -34,4 +34,54 @@ int Lunghezza(string comecavolomipare)
 		return retVal;
 	}
   ```
-Maiuscolo
+IsLetter
+bool isletter(char c)
+	{
+        if (c >= 'a' && c <= 'z')
+        {
+			return true;
+        }else if(c >= 'A' && c <= "Z") 
+        {
+            return true;
+        }
+		return false;
+    }
+   IsDigit
+    bool isdigit(char c)
+    {
+        if (c >= '0' && c <= '9')
+        {
+            return true;
+        }
+        return false;
+    }
+ Maiuscolo 
+ string Maiuscolo(string s)
+{
+	int len = Lunghezza(s);
+	char[] caratteri = s.ToCharArray();
+	for (int idx = 0;idx<len;idx++)
+	{
+		if (c >= 'a' || c <= 'z')
+		{
+			int a= (int)caratteri[idx] & 0x5f;
+			caratteri[idx] = (char)a;
+		}
+	}
+	return new String(caratteri);
+}
+Minuscolo
+ string Minuscolo(string s)
+    {
+        int len = Lunghezza(s);
+        char[] caratteri = s.ToCharArray();
+        for (int idx = 0; idx < len; idx++)
+        {
+            if (c >= 'a' || c <= 'z')
+            {
+                int a = (int)caratteri[idx] | 0x20;
+                caratteri[idx] = (char)a;
+            }
+        }
+        return new String(caratteri);
+    }
