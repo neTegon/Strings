@@ -102,6 +102,7 @@ Qui c'è un esempio:
     }
 ```
 Alfabetica
+Per controllare che la stringa sia alfabetica ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e se incontra un carattere che non è una lettera ritorna falso, altrimenti, una volta finito il vettore, ritorna vero
 Qui c'è un esempio:
 ```
  bool alfabetico(string s)
@@ -141,6 +142,7 @@ int nlettere(string s)
     }
  ```
   Alfanumerica
+  Per controllare che la stringa sia alfanumerica ho creato un metodo che, una volta presa la sua lunghezza e trasfformata in un vettore, scorre il vettore e se incontra un carattere che non è una lettera o un numero ritorna falso, altrimenti, una volta finito il vettore, ritorna vero
   Qui c'è un esempio:
  ```
   bool alfanumerico( string s )
